@@ -6,18 +6,26 @@ layout: home
 ---
 
 # Welcome to the WMT 2022 Chat Shared Task!
+  Translating conversational text, in particular customer support chats, is an important and challenging application task for machine translation technology. This type of content has so far not been extensively explored in prior MT research, largely due to the lack of publicly available data sets. Prior related work has mostly focused on movie subtitles and European Parliament speeches.
+  In contrast to the translation of the news stories, software manuals, biomedical text, etc. in which the text is carefully authored and well formated, chat conversations are less planned, more informal, and often ungrammatical.
+  Further, such conversations are usually characterized by shorter and simpler sentences and contain more pronouns.
+  In effect, the task of translating chat conversations can be regarded as a two-in-one task, modelling both dialogue and translation at the same time.
+  Machine translation systems trained for chat conversations are expected to deal with the task's inherent challenges and characteristics, such as (among others):
 
-<p class="message">  
-  Translating conversational text, in particular customer support chats, is an important and challenging application task for machine translation technology. This type of content has so far not been extensively explored in prior MT research, largely due to the lack of publicly available data sets. Prior related work has mostly focused on movie subtitles and European Parliament speeches.<br /><br />
-  
-  The primary goal of this Chat shared task is to encourage participants to train and test models specific for bilingual chat conversations in a corpus composed of original bilingual costumer support conversations. <br /><br />
-  
-  The language-pairs tested are: en⇔de, en⇔fr, and en⇔pt_br.<br /><br />
+- The importance of using extended context for translating the segments and modelling dialogue. E.g. Agreement and anaphora resolution requiring inter-sentential modelling:
+      `I had a flight with AirLiberty for next Saturday from Lisbon to Abu Dhabi. Could you please change it to next Monday?`
 
-  We encourage participants to use the <strong>bilingual context</strong> in the translation models  submissions.<br /><br /> 
+- Robustness to noisy input. Chat text is usually noisier, containing misspelled words, wrong casings, incomplete sentences, etc.,
+- Consistent and coherent translation throughout the entire conversation, and
+- Modeling of all the speakers and language directions involved in the conversation, where each can be regarded as a different sub-domain (depending on the task).
   
-  Have questions or suggestions? Feel free to <a href="mailto:wmt.metrics@gmail.com">Contact Us</a>!
-</p>
+The primary goal of this Chat shared task is to encourage participants to train and test models specific for bilingual chat conversations in a corpus composed of original bilingual costumer support conversations.
+  
+  This year we expanded the language pairs to en⇔de, en⇔fr, and en⇔pt_br.
+
+  We encourage participants to use the **bilingual** context in the translation models submissions.
+  
+  Have questions or suggestions? Feel free to [Contact Us](mailto:wmt.metrics@gmail.com)!
 
 ## Chat Task Important Dates
 
@@ -43,38 +51,43 @@ The goals of chat translation shared task are to provide the common ground for:
 
 A critical challenge faced by international companies today is delivering customer support in several different languages. One solution to this challenge is centralizing support with English speaking agents and having a translation layer in the middle to translate from the customer's language into the agent's (English) and vice versa.
 
-Although this year's task is not focused on dealing with noisy input nor measuring the model's robustness to such noise, the original English data contains different types of noise including typos, wrong capitalization, among others; and while not required, the participants might want to take this aspect into consideration when developing their models.
-
-1. Official results: Correlation with MQM scores at the sentence and system level, accounting for both directions, for the following language pairs:
-   - English⇔German,
-   - English⇔French
-   - English-Portuguese-br
-2. Secondary Evaluation: Correlation with automatic scores at the sentence and system level.
+Although this year's task is not focused on dealing with noisy input nor measuring the model's robustness to such noise, the original data contains different types of noise including typos, wrong capitalization, among others; and while not required, the participants might want to take this aspect into consideration when developing their models.
 
 ## Data
 
-The data used in this shared task is part of a unique corpus called MAIA corpus that is composed with genuin bilingual costumer support conversations.
-
+The data used in this edition of the shared task is part of a unique corpus called MAIA corpus that is composed with genuin bilingual costumer support conversations.
 ### Subtracks:
 
-1. [Zero-shot](./subtasks/zero-shot/): In this subtask participants have to develop machine translation systems without access to any training data.
+1. [Zero-shot](./subtasks/zero-shot/): In this subtask participants have to develop machine translation systems without access to any in-domain training data.
 2. [Low-resource](./subtasks/low-resource/): In this subtask participants have to develop machine translation systems with access to bilingual conversations without reference translations.
-   
-## Paper Describing Your Metric
-You are invited to submit a short paper (4 to 6 pages) to WMT describing your translation model. Information on how to submit is available here. Shared task submission description papers are non-archival, and you are not required to submit a paper if you do not want to. If you don't, we ask that you give an appropriate reference describing your metric that we can cite in the overview paper.
 
-## Data available
+### Datasets
 
 TBA
 
 
-## Test Sets (Evaluation Data)
+### Test Sets (Evaluation Data)
 
 TBA
 
-### Submission Format
+
+## Submission Format
 
 TBA
+
+## Evaluation
+Similarly to the previous edition, the Systems' performance will be evaluated both automatically and manualy.
+But, this year we will use [COMET](https://unbabel.github.io/COMET/html/index.html) as the automatic metric and MQM for the human evluation.
+The official rankings will be based on the MQM scores at the document level, accounting for both directions.
+The COMET scores, measured on the document level will be used as the secondary metric.
+
+
+## Paper Describing Your MT Systems
+Participants are invited to submit a short paper (4 to 6 pages) to WMT describing their MT system. Information on how to submit is available [here](https://www.statmt.org/wmt22/index.html").
+Please note that the shared task submission description papers are non-archival, and it is not mandatory to submit a paper if you do not want to.
+
+
+
 
 
 ## Organization:
