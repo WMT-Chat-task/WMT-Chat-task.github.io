@@ -14,20 +14,14 @@ layout: home
   Further, such conversations are usually characterized by shorter and simpler sentences and contain more pronouns.<br />
   In effect, the task of translating chat conversations can be regarded as a two-in-one task, modelling both dialogue and translation at the same time.<br /><br />
   Machine translation systems trained for chat conversations are expected to deal with the task's inherent challenges and characteristics, such as (among others):<br />
-<ul>
+  <ul>
   <li>The importance of using extended context for translating the segments and modelling dialogue. E.g. Agreement and anaphora resolution requiring inter-sentential modelling:<br />
   `I had a flight with AirLiberty for next Saturday from Lisbon to Abu Dhabi. Could you please change it to next Monday?`
   </li>
   <li>Robustness to noisy input. Chat text is usually noisier, containing misspelled words, wrong casings, incomplete sentences, etc.,</li>
   <li>Consistent and coherent translation throughout the entire conversation, and</li>
   <li>Modeling of all the speakers and language directions involved in the conversation, where each can be regarded as a different sub-domain (depending on the task).</li>
-</ul>
-  - 
-
-- 
-- 
--  <br />
-
+  </ul>
 
 The primary goal of this Chat shared task is to encourage participants to train and test models specific for bilingual chat conversations in a corpus composed of original bilingual costumer support conversations. <br />
 
