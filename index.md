@@ -34,7 +34,7 @@ Have questions or suggestions? Feel free to <a href="mailto:wmt.chat.task@gmail.
 
 |  | Date |
 | ----------- | :-----------: |
-| Validation set ready to download | 15th June |
+| Validation set ready to download | ~15th~ 22nd June |
 | Test set ready to download | TBA |
 | Submission deadline for Chat task | 23-28th July, 2022 |
 | Paper submission deadline to WMT | 7th September, 2022 |
@@ -68,7 +68,47 @@ You are invited to submit a short paper (4 to 6 pages) to WMT describing your tr
 
 ## Datasets
 
-TBA
+The Dev sets (both bilingual and monolingual) of all the language pairs are available in the [github](https://github.com/chat-task/wmt-chat-task/tree/main/data) repository.
+The files contain the bilingual conversations by a customer and an agent in their original language.
+Here is an example of such a conversation:
+
+
+| **source_language** | **mt_language** | **source_segment**                                                                                                                                                       | **pe_segment**                                                                                                                                                                                           | translation_direction |
+|-----------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| fr              | en          | Bonjour je ne peut pas utiliser mes jetons accumuler pour acheter un livre audio                                                                                         | Hello, I can't use the tokens I accumulated to buy an audio book.                                                                                                                                 | customer              |
+| en              | fr          | Thank you for contacting #PRS_ORG#, it was my pleasure to assist you today.                                                                                              | Merci d'avoir contacté #PRS_ORG#, ce fut un plaisir de vous aider aujourd'hui.                                                                                                                    | agent                 |
+| en              | fr          | I hope you have an excellent day.                                                                                                                                        | J'espère que vous passez une excellente journée.                                                                                                                                                  | agent                 |
+| en              | fr          | Please allow me a moment to verify the account.                                                                                                                          | Veuillez m'accorder un moment pour vérifier le compte.                                                                                                                                            | agent                 |
+| en              | fr          | I am sorry that you are experiencing this issue, I will do my best to assist you.                                                                                        | Je suis désolé que vous rencontriez ce problème, je ferai de mon mieux pour vous aider.                                                                                                           | agent                 |
+| en              | fr          | What is the error message or problem you are getting when trying to use your audio book credits?                                                                         | Quel est le message d'erreur ou le problème que vous rencontrez lorsque vous essayez d'utiliser vos crédits de livres audio ?                                                                     | agent                 |
+| fr              | en          | Je ne peu pas effectuer l achat je peu juste le faire avec #PRS_ORG# ou par carte                                                                                        | I am unable to make the purchase, I can only do it with #PRS_ORG# or by card.                                                                                                                     | customer              |
+| en              | fr          | Are your credit s from an #PRS_ORG# subscription?                                                                                                                        | Vos crédits proviennent-ils d'un abonnement #PRS_ORG# ?                                                                                                                                           | agent                 |
+| fr              | en          | Oui                                                                                                                                                                      | Yes.                                                                                                                                                                                              | customer              |
+| en              | fr          | I understand, at the moment we no longer work with #PRS_ORG#, they are not partnered with us anymore, probably that is the error, please let me confirm this information | Je comprends, pour le moment nous ne travaillons plus avec #PRS_ORG#, ils ne sont plus en partenariat avec nous, c'est probablement la raison de l'erreur, laissez-moi confirmer ces informations | agent                 |
+| fr              | en          | Mais ça me met que j ai 13 jetons à utiliser                                                                                                                             | But it shows that I have 13 tokens.                                                                                                                                                               | customer              |
+| en              | fr          | I am confirming the information with my team, thanks for your patience                                                                                                   | Je confirme les informations avec mon équipe, merci pour votre patience                                                                                                                           | agent                 |
+
+<br /><br />
+As you can see, the source sentences (i.e. *source_segment*) are in the original language of the speaker, i.e. French in the case of *customer* and English in the case of *agent*. And the translations (i.e. *pe_segment*).
+Moreover, since the data is anonymised, we have the entities replaced by the following special tokens:
+
+| **Token**         | **Description**                          |
+|-------------------|------------------------------------------|
+| #NAME#            | Person’s names                           |
+| #PRS_ORG#         | Products and Services, and Organizations |
+| #ADDRESS#         | Address                                  |
+| #EMAIL#           | E-mail address                           |
+| #IP#              | IP Address                               |
+| #PASSWORD#        | Password                                 |
+| #PHONENUMBER#     | Phone number                             |
+| #CREDITCARD#      | Credit card number                       |
+| #URL#             | URL Address                              |
+| #IBAN#            | IBAN number                              |
+| #NUMBER#          | Any number (all digits)                  |
+| #ALPHANUMERIC_ID# | Any alphanumeric ID                      |
+
+<br /><br />
+
 
 
 ## Test Sets (Evaluation Data)
