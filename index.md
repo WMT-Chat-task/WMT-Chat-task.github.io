@@ -33,7 +33,7 @@ Have questions or suggestions? Feel free to <a href="mailto:wmt.chat.task@gmail.
 ## Chat Task Important Dates
 <style scoped>
 table {
-  font-size: 10px;
+  font-size: 13px;
 }
 </style>
 
