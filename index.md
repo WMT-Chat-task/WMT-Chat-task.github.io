@@ -31,10 +31,15 @@ We encourage participants to use the **bilingual context** in the translation mo
 Have questions or suggestions? Feel free to <a href="mailto:wmt.chat.task@gmail.com">Contact Us</a>!
 
 ## Chat Task Important Dates
+<style scoped>
+table {
+  font-size: 10px;
+}
+</style>
 
 |  | Date |
 | ----------- | :-----------: |
-| Validation set ready to download | ~15th~ 22nd June |
+| Validation set ready to download | ~~15th~~ 22nd June |
 | Test set ready to download | TBA |
 | Submission deadline for Chat task | 23-28th July, 2022 |
 | Paper submission deadline to WMT | 7th September, 2022 |
