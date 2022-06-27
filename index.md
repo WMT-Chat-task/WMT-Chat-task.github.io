@@ -62,11 +62,13 @@ A critical challenge faced by international companies today is delivering custom
 ## Data
 
 The data used in this shared task is part of a unique corpus called MAIA corpus that is composed with genuin bilingual costumer support conversations.
+One of the main challenges of this domain is the lack of real bilingual training data available.
+In order to make this shared task as close as possible to the real-world settings, this year, we release only the dev and test sets. So, please note that there will be no training data for this edition and the participants are expected to use only the dev sets (bilingual and monolingual) to train and fine-tune their MT systems.
 
-### Subtracks:
+### Tracks:
 
-1. **Zero-shot**: In this subtask participants have to develop machine translation systems without access to any in-domain training data.
-2. **Low-resource**: In this subtask participants have to develop machine translation systems with access to bilingual conversations without reference translations.
+1. **Zero-shot**: In this task participants have to develop machine translation systems without access to any in-domain training data.
+2. **Low-resource**: In this task participants have to develop machine translation systems with access to bilingual conversations without reference translations.
    
 ## Paper Describing Your Metric
 You are invited to submit a short paper (4 to 6 pages) to WMT describing your translation model. Information on how to submit is available here. Shared task submission description papers are non-archival, and you are not required to submit a paper if you do not want to. If you don't, we ask that you give an appropriate reference describing your metric that we can cite in the overview paper.
