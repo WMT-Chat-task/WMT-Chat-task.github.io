@@ -7,6 +7,20 @@ layout: home
 
 # Welcome to the WMT 2022 Chat Shared Task!
 
+## Updates
+
+### June 30th, 2022
+
+> ``❗`` Please  register your participation by sending us an email to <a href="mailto:wmt.chat.task@gmail.com">our official email</a> in order to be able to receive immediate updates announcements and ask us questions. 
+
+> ``❗`` Baselines' scores on devsets will be available soon! 
+
+> ``❗`` List of additional permited training data are updated in the Datasets section.
+
+<br />
+
+## Overview
+
 <p class="message">  
   Translating conversational text, in particular customer support chats, is an important and challenging application for machine translation technology. This type of content has so far not been extensively explored in prior MT research, largely due to the lack of publicly available data sets. Prior related work has mostly focused on movie subtitles and European Parliament speeches.<br />
 
@@ -65,6 +79,9 @@ The data used in this shared task is part of a unique corpus called MAIA corpus 
 One of the main challenges of this domain is the lack of real bilingual training data available.
 In order to make this shared task as close as possible to the real-world settings, this year, we release only the dev and test sets. So, please note that there will be no training data for this edition and the participants are expected to use only the dev sets (bilingual and monolingual) to train and fine-tune their MT systems.
 
+Please note, that all the data released for the WMT22 Chat Translation task is under the license of [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0)
+ and can be freely used for research purposes only. Please note that, as the license states, no commercial uses are permitted for this corpus. We just ask that you cite the WMT22 Chat Translation Task overview paper. Any other use is not permitted unless previous written authorization is given by Unbabel.
+
 ### Tracks:
 
 1. **Zero-shot**: In this task participants have to develop machine translation systems without access to any in-domain training data.
@@ -114,9 +131,11 @@ Moreover, since the data is anonymised, we have the entities replaced by the fol
 | #NUMBER#          | Any number (all digits)                  |
 | #ALPHANUMERIC_ID# | Any alphanumeric ID                      |
 
-<br /><br />
+<br />
 
+<span style="color:red">**Note**</span> that for training and validation purposes you can use the training data of the general task (including the data of the previous editions), the data of the other tracks (eg. biomedical) if you find them useful for this task, and the other corpora (either parallel or monolingual) that are publicly available for the research purposes, like most of the corpora available on OPUS, as well as the data of the previous edition of the Chat Translation Task.
 
+<br />
 
 ## Test Sets (Evaluation Data)
 
