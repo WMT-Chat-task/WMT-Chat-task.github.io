@@ -11,11 +11,11 @@ layout: home
 
 ### June 30th, 2022
 
-> ``❗`` Please  register your participation by sending us an email to <a href="mailto:wmt.chat.task@gmail.com">our official email</a> in order to be able to receive immediate updates announcements and ask us questions. 
+``❗`` Please  register your participation by sending us an email to <a href="mailto:wmt.chat.task@gmail.com">our official email</a> in order to be able to receive immediate updates announcements and ask us questions. 
 
-> ``❗`` Baselines' scores on devsets will be available soon! 
+``❗`` Baselines' scores on devsets will be available soon! 
 
-> ``❗`` List of additional permited training data are updated in the Datasets section.
+``❗`` List of additional permited training data are updated in the Datasets section.
 
 <br />
 
@@ -54,7 +54,7 @@ table {
 |  | Date |
 | ----------- | :-----------: |
 | Validation set ready to download | ~~15th~~ 22nd June |
-| Test set ready to download | TBA |
+| Test set ready to download | 23rd July, 2022 |
 | Submission deadline for Chat task | 23-28th July, 2022 |
 | Paper submission deadline to WMT | 7th September, 2022 |
 | WMT Notification of acceptance | 9th October, 2022 |
