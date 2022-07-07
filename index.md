@@ -9,9 +9,14 @@ layout: home
 
 ## Updates
 
+### July 7th, 2022
+
+``❗`` Baselines scores on devsets are now available in the section **Baseline Scores on DevSets** below and scripts to reproduce them can be found [here](https://github.com/WMT-Chat-task/data-and-baselines). 
+
+
 ### June 30th, 2022
 
-``❗`` Please  register your participation by sending us an email to <a href="mailto:wmt.chat.task@gmail.com">our official email</a> in order to be able to receive immediate updates announcements and ask us questions. 
+``❗`` Please also register to the chat-shared-task [google-group](https://groups.google.com/g/wmt-chat-task) in order to be able to receive immediate updates announcements and ask us questions! 
 
 ``❗`` Baselines' scores on devsets will be available soon! 
 
@@ -87,8 +92,6 @@ Please note, that all the data released for the WMT22 Chat Translation task is u
 1. **Zero-shot**: In this task participants have to develop machine translation systems without access to any in-domain training data.
 2. **Low-resource**: In this task participants have to develop machine translation systems with access to bilingual conversations without reference translations.
    
-## Paper Describing Your Metric
-You are invited to submit a short paper (4 to 6 pages) to WMT describing your translation model. Information on how to submit is available here. Shared task submission description papers are non-archival, and you are not required to submit a paper if you do not want to. If you don't, we ask that you give an appropriate reference describing your metric that we can cite in the overview paper.
 
 ## Datasets
 
@@ -137,9 +140,38 @@ Moreover, since the data is anonymised, we have the entities replaced by the fol
 
 <br />
 
+## Baseline Scores on DevSets
+
+We provide two different baselines: one without any context and another with context (using the two previous iterations for the corresponding direction).
+
+### Baseline without context:
+
+| Direction | Lang  | BLEU  | chrF  | COMET  | TER   |
+|-----------|-------|-------|-------|--------|-------|
+| agent     | de    | 35.24 | 57.17 | 0.4168 | 55.70 |
+| agent     | fr    | 54.14 | 69.47 | 0.7984 | 37.95 |
+| agent     | pt_br | 50.38 | 68.84 | 0.8645 | 40.99 |
+| customer  | de    | 45.98 | 60.81 | 0.5426 | 51.21 |
+| customer  | fr    | 46.51 | 62.29 | 0.6382 | 50.12 |
+| customer  | pt_br | 44.71 | 59.95 | 0.5851 | 53.78 |
+
+### Baseline with context:
+| Direction | Lang  | BLEU  | chrF  | COMET  | TER   |
+|-----------|-------|-------|-------|--------|-------|
+| agent     | de    | 33.89 | 55.96 | 0.3811 | 57.30 |
+| agent     | fr    | 53.58 | 68.81 | 0.7978 | 41.50 |
+| agent     | pt_br | 49.94 | 67.95 | 0.9029 | 40.89 |
+| customer  | de    | 47.11 | 62.06 | 0.6163 | 46.94 |
+| customer  | fr    | 48.05 | 63.61 | 0.6834 | 47.78 |
+| customer  | pt_br | 47.24 | 62.31 | 0.6437 | 47.91 |
+
+Scripts to reproduce scores are available [here](https://github.com/WMT-Chat-task/data-and-baselines).
+
+<br />
+
 ## Test Sets (Evaluation Data)
 
-TBA
+Test Sets will be available on the 23th of July.
 
 ### Submission Format
 
