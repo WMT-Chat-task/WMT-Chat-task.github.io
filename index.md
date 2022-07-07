@@ -156,6 +156,7 @@ We provide two different baselines: one without any context and another with con
 | customer  | pt_br | 44.71 | 59.95 | 0.5851 | 53.78 |
 
 ### Baseline with context:
+
 | Direction | Lang  | BLEU  | chrF  | COMET  | TER   |
 |-----------|-------|-------|-------|--------|-------|
 | agent     | de    | 33.89 | 55.96 | 0.3811 | 57.30 |
@@ -171,7 +172,7 @@ Scripts to reproduce scores are available [here](https://github.com/WMT-Chat-tas
 
 ## Test Sets (Evaluation Data)
 
-Test Sets will be available on the 23th of July.
+Test Sets will be available on the 23rd of July.
 
 ### Submission Format
 
