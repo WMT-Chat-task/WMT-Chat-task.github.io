@@ -9,6 +9,11 @@ layout: home
 
 ## Updates
 
+### July 22nd, 2022
+``❗`` The evaluation week was <span style="color:red">**postponed by 1 week**</span>: it will now happen between **28th July - 6th August**. Test sets will be available for download on the 28th of July. 
+
+``❗`` More updated information can be found in the **Submission format** section.
+
 ### July 7th, 2022
 
 ``❗`` Baselines scores on devsets are now available in the section **Baseline Scores on DevSets** below and scripts to reproduce them can be found [here](https://github.com/WMT-Chat-task/data-and-baselines). 
@@ -59,8 +64,8 @@ table {
 |  | Date |
 | ----------- | :-----------: |
 | Validation set ready to download | ~~15th~~ 22nd June |
-| Test set ready to download | 23rd July, 2022 |
-| Submission deadline for Chat task | 23-28th July, 2022 |
+| Test set ready to download | ~~23rd~~ 28th July, 2022 |
+| Submission deadline for Chat task | ~~23-28th~~ 28th July - 6th August, 2022 |
 | Paper submission deadline to WMT | 7th September, 2022 |
 | WMT Notification of acceptance | 9th October, 2022 |
 | WMT Camera-ready deadline | 16th October, 2022 |
@@ -168,15 +173,17 @@ We provide two different baselines: one without any context and another with con
 
 Scripts to reproduce scores are available [here](https://github.com/WMT-Chat-task/data-and-baselines).
 
+
 <br />
 
 ## Test Sets (Evaluation Data)
 
-Test Sets will be available on the 23rd of July.
+Test Sets will be available on the ~~23rd~~ 28th July of July.
 
 ### Submission Format
 
-TBA
+ Submissions will be done by sending us an email to <a href="mailto:wmt.chat.task@gmail.com"> our official email</a>. 
+ We will release a converter along with test sets that converts the TXT format (the outputs of the MT systems) into CSV format. Participants are encouraged to translated both directions (i.e. agent and customer) but can choose to only submit translations to one direction.
 
 ## Evaluation
 Similarly to the previous edition, the Systems' performance will be evaluated both automatically and manualy.
