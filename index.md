@@ -9,7 +9,7 @@ layout: home
 
 ## Updates
 ### July 28th, 2022
-``❗`` The test sets are now available [here](https://github.com/WMT-Chat-task/data-and-baselines).
+``❗`` The test sets are now available [here](https://github.com/WMT-Chat-task/data-and-baselines/tree/main/data/testsets).
 Please check the updated details of the submission information in the **Submission format** section.
 
 ### July 22nd, 2022
@@ -196,7 +196,7 @@ The submission file names should be set according to the follwong template: `<Te
 The `<SubmissionType>` can be one of the followings: `Primary`, `Contrastive1`, and `Contrastive2`.
 <br />
 
- We released a converter along with test sets that converts the outputs of the MT systems (in the TXT format) into the CSV format. Participants are encouraged to translate both directions (i.e. agent and customer) but can choose to only submit translations to one direction. For more details on the converter script (the file formats, directions, etc) check the README.md file provided in our github [repository](https://github.com/WMT-Chat-task/data-and-baselines).
+ We released a [converter](https://github.com/WMT-Chat-task/data-and-baselines/blob/main/prepare-submission.py) along with test sets that converts the outputs of the MT systems (in the text format) into the CSV format. Participants are encouraged to translate both directions (i.e. agent and customer) but can choose to only submit translations to one direction. For more details on the converter script (the file formats, directions, etc) check the README.md file provided in our github [repository](https://github.com/WMT-Chat-task/data-and-baselines).
 
 **Note 1:** Translations should be “human-ready”, i.e. in the form that text is normally published, so latin-script languages should be recased and detokenised.
 
