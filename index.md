@@ -8,6 +8,9 @@ layout: home
 # Welcome to the WMT 2022 Chat Shared Task!
 
 ## Updates
+### July 28th, 2022
+``❗`` The test sets are now available [here](https://github.com/WMT-Chat-task/data-and-baselines).
+Please check the updated details of the submission information in the **Submission format** section.
 
 ### July 22nd, 2022
 ``❗`` The evaluation week was <span style="color:red">**postponed by 1 week**</span>: it will now happen between **28th July - 6th August**. Test sets will be available for download on the 28th of July. 
@@ -182,14 +185,28 @@ Test Sets will be available on the ~~23rd~~ 28th July of July.
 
 ### Submission Format
 
- Submissions will be done by sending us an email to <a href="mailto:wmt.chat.task@gmail.com"> our official email</a>. 
- We will release a converter along with test sets that converts the TXT format (the outputs of the MT systems) into CSV format. Participants are encouraged to translated both directions (i.e. agent and customer) but can choose to only submit translations to one direction.
+ Submissions will be done by sending us an email to <a href="mailto:wmt.chat.task@gmail.com"> our official email</a>.
+
+ Each team can submit at most 3 MT outputs per language pair direction, one `primary` and up to two `contrastive`. The submitting team is required to explicitly indicate which of these submissions represents their primary submission. 
+ In the case that the participating team sends several submissions (in different emails) only the **latest submission** received will be used as their official submission.
+
+The submission file names should be set according to the follwong template: `<Team-Name>_<SourceLanguage>-<TargetLanguage>_<SubmissionType>.csv`
+<br /><br />
+
+The `<SubmissionType>` can be one of the followings: `Primary`, `Contrastive1`, and `Contrastive2`.
+<br />
+
+ We released a converter along with test sets that converts the outputs of the MT systems (in the TXT format) into the CSV format. Participants are encouraged to translate both directions (i.e. agent and customer) but can choose to only submit translations to one direction. For more details on the converter script (the file formats, directions, etc) check the README.md file provided in our github [repository](https://github.com/WMT-Chat-task/data-and-baselines).
+
+**Note 1:** Translations should be “human-ready”, i.e. in the form that text is normally published, so latin-script languages should be recased and detokenised.
+
+**Note 2:** Each participating team is asked to send a short paragraph briefly describing their approach, along with their submissions.
 
 ## Evaluation
 Similarly to the previous edition, the Systems' performance will be evaluated both automatically and manualy.
-But, this year we will use [COMET](https://unbabel.github.io/COMET/html/index.html) as the automatic metric and MQM for the human evluation. <br />
-The official rankings will be based on the MQM scores at the document level, accounting for both directions.
-The COMET scores, measured on the document level will be used as the secondary metric.
+But, this year we will use [COMET](https://unbabel.github.io/COMET/html/index.html) as the automatic metric and MQM for the human evaluation. <br />
+The manual document-level evaluation will be performed only on the primary submission and will be used for the official rankings of the participating teams accounting for both directions.
+The COMET scores will be used as the secondary metric.
 
 
 ## Paper Describing Your MT Systems
