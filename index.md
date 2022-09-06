@@ -227,7 +227,7 @@ We used [COMET](https://unbabel.github.io/COMET/html/index.html) and [chrF](http
 | IIPT-Flipkart            | 0.768 | 0.730 | 0.907 | 0.729 |
 | Huawei                   | 0.704 | 0.725 | 0.918 | 0.766 |
 
-<br /><br />
+<br />
 
 **EN⇔FR:**
 
@@ -238,7 +238,7 @@ We used [COMET](https://unbabel.github.io/COMET/html/index.html) and [chrF](http
 | Baseline with context    | 0.664 | 0.631 | 0.601 | 0.602 |
 | Unbabel                  | 1.086 | 0.838 | 0.838 | 0.677 |
 
-<br /><br />
+<br />
 
 **EN⇔PT-BR:**
 
@@ -249,7 +249,7 @@ We used [COMET](https://unbabel.github.io/COMET/html/index.html) and [chrF](http
 | Baseline with context    | 0.863    | 0.675 | 0.675    | 0.653 |
 | Unbabel                  | 1.078    | 0.771 | 0.849    | 0.689 |
 
-<br /><br />
+<br />
 
 ## Paper Describing Your MT Systems
 Participants are invited to submit a short paper (4 to 6 pages) to WMT describing their MT system. Information on how to submit is available [here](https://www.statmt.org/wmt22).<br />
