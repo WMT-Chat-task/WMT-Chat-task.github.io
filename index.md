@@ -8,6 +8,9 @@ layout: home
 # Welcome to the WMT 2022 Chat Shared Task!
 
 ## Updates
+### September 6th, 2022
+``❗`` The results of the automatic evaluations are published. You can check them in the **Automatic evaluation (results)** section.
+
 ### July 28th, 2022
 ``❗`` The test sets are now available [here](https://github.com/WMT-Chat-task/data-and-baselines/tree/main/data/testsets).
 Please check the updated details of the submission information in the **Submission format** section.
@@ -208,7 +211,40 @@ But, this year we will use [COMET](https://unbabel.github.io/COMET/html/index.ht
 The manual document-level evaluation will be performed only on the primary submission and will be used for the official rankings of the participating teams accounting for both directions.
 The COMET scores will be used as the secondary metric.
 
+## Automatic evaluation (results)
 
+We used [COMET](https://unbabel.github.io/COMET/html/index.html) and [chrF](https://aclanthology.org/W15-3049/) for the automatica evaluation. Below are presented the results:
+
+**EN⇔DE:**
+|                          | en-de |       | de-en |       |
+|--------------------------|-------|-------|-------|-------|
+|                          | COMET | chrF  | COMET | chrF  |
+| Baseline without context | 0.403 | 0.550 | 0.588 | 0.621 |
+| Baseline with context    | 0.376 | 0.537 | 0.680 | 0.642 |
+| BJTU                     | 0.810 | 0.735 | 0.946 | 0.775 |
+| Unbabel                  | 0.774 | 0.733 | 0.915 | 0.737 |
+| IIPT-Flipkart            | 0.768 | 0.730 | 0.907 | 0.729 |
+| Huawei                   | 0.704 | 0.725 | 0.918 | 0.766 |
+
+<br /><br />
+**EN⇔FR:**
+|                          | en-fr |       | fr-en |       |
+|--------------------------|-------|-------|-------|-------|
+|                          | COMET | chrF  | COMET | chrF  |
+| Baseline without context | 0.644 | 0.640 | 0.574 | 0.587 |
+| Baseline with context    | 0.664 | 0.631 | 0.601 | 0.602 |
+| Unbabel                  | 1.086 | 0.838 | 0.838 | 0.677 |
+
+<br /><br />
+**EN⇔PT-BR:**
+|                          | en-pt_br |       | pt_br-en |       |
+|--------------------------|----------|-------|----------|-------|
+|                          | COMET    | chrF  | COMET    | chrF  |
+| Baseline without context | 0.824    | 0.681 | 0.61     | 0.631 |
+| Baseline with context    | 0.863    | 0.675 | 0.675    | 0.653 |
+| Unbabel                  | 1.078    | 0.771 | 0.849    | 0.689 |
+
+<br /><br />
 ## Paper Describing Your MT Systems
 Participants are invited to submit a short paper (4 to 6 pages) to WMT describing their MT system. Information on how to submit is available [here](https://www.statmt.org/wmt22).<br />
 Please note that the shared task submission description papers are non-archival, and it is not mandatory to submit a paper if you do not want to.
