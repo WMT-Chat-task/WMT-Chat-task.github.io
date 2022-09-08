@@ -222,7 +222,7 @@ We used [COMET](https://unbabel.github.io/COMET/html/index.html) and [chrF](http
 |                          | COMET | chrF  | COMET | chrF  |
 | Baseline without context | 0.403 | 0.550 | 0.588 | 0.621 |
 | Baseline with context    | 0.376 | 0.537 | 0.680 | 0.642 |
-| BJTU                     | 0.810 | 0.735 | 0.946 | 0.775 |
+| BJTU-WeChat              | 0.810 | 0.735 | 0.946 | 0.775 |
 | Unbabel                  | 0.774 | 0.733 | 0.915 | 0.737 |
 | IIPT-Flipkart            | 0.768 | 0.730 | 0.907 | 0.729 |
 | Huawei                   | 0.704 | 0.725 | 0.918 | 0.766 |
