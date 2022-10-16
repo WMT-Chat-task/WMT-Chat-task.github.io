@@ -8,6 +8,9 @@ layout: home
 # Welcome to the WMT 2022 Chat Shared Task!
 
 ## Updates
+### October 16th, 2022
+``❗`` The test sets with the gold references are now available [here](https://github.com/WMT-Chat-task/data-and-baselines/tree/main/data/testsets).
+
 ### September 6th, 2022
 ``❗`` The results of the automatic evaluations are published. You can check them in the **Automatic evaluation (results)** section.
 
